@@ -1,0 +1,78 @@
+[{
+	"_id": "MASTER_STORIES_DO_NOT_DELETE",
+	"newsStories": "[]",
+	"homeNewsStories": "Array"
+},
+{
+	"_id": {
+		"$oid": "5ca3aeab3bc3296b81725c8f"
+	},
+	"type": "USER_TYPE",
+	"displayName": "Nigel Smith",
+	"email": "nigeltx@icloud.com",
+	"passwordHash": "XXXX",
+	"date": {
+		"$numberLong": "1449027434557"
+	},
+	"settings": {
+		"requireWIFI": true,
+		"enableAlerts": false
+	},
+	"SavedStories": [],
+	"filters": [
+		{
+			"name": "Technology Companies",
+			"keywords": [
+				"Apple",
+				"Microsoft",
+				"IBM",
+				"Amazon",
+				"Google",
+				"Intel"
+			],
+			"enableAlert": false,
+			"alertFrequency": 0,
+			"enableAutoDelete": false,
+			"deleteTime": 0,
+			"timeOfLastScan": 0,
+			"newStories": []
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5ca3aeab3bc3296b81725c90"
+	},
+	"type": "USER_TYPE",
+	"displayName": "Kieu-Oanh Smith",
+	"email": "q1smith@icloud.com",
+	"passwordHash": "XXXX",
+	"date": {
+		"$numberLong": "1449027434557"
+	},
+	"settings": {
+		"requireWIFI": true,
+		"enableAlerts": false
+	},
+	"SavedStories": [],
+	"filters": [
+		{
+			"name": "Technology Companies",
+			"keywords": [
+				"Apple",
+				"Microsoft",
+				"IBM",
+				"Amazon",
+				"Google",
+				"Intel"
+			],
+			"enableAlert": false,
+			"alertFrequency": 0,
+			"enableAutoDelete": false,
+			"deleteTime": 0,
+			"timeOfLastScan": 0,
+			"newStories": []
+		}
+	]
+}]
+

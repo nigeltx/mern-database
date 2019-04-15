@@ -1,0 +1,12 @@
+{
+  "host": "mongodb+srv://cluster0-taai7.mongodb.net",
+  "connectUrl": "mongodb+srv://admin:<password>@cluster0-taai7.mongodb.net/test?retryWrites=true"
+  "ssl": true,
+  "username": "admin",
+  "password": "XXXX",
+  "databaseName": "newswatcherdb",
+  "collectionNames": ["newswatcher"],
+  "startupCommand": "mongo mongodb+srv://cluster0-taai7.mongodb.net --ssl --username admin --password <password>",
+  "importCommand": "mongoimport --host Cluster0-shard-0/cluster0-shard-00-00-taai7.mongodb.net:27017,cluster0-shard-00-01-taai7.mongodb.net:27017,cluster0-shard-00-02-taai7.mongodb.net:27017 --ssl --username admin --password Godis4us --authenticationDatabase admin --db newswatcherdb --collection newswatcher --type json --jsonArray --file ~/WebstormProjects/NewsWatcher/database/databaseImport.json",
+  "exportCommand": "mongoexport --host Cluster0-shard-0/cluster0-shard-00-00-taai7.mongodb.net:27017,cluster0-shard-00-01-taai7.mongodb.net:27017,cluster0-shard-00-02-taai7.mongodb.net:27017 --ssl --username admin --password Godis4us --authenticationDatabase admin --db newswatcherdb --collection newswatcher --type json --jsonArray --pretty --out ~/WebstormProjects/NewsWatcher/database/databaseExport.json"
+}

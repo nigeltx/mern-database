@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "MASTER_STORIES_DO_NOT_DELETE",
+    "newsStories": [],
+    "homeNewsStories": []
+  },
+  {
+    "type": "USER_TYPE",
+    "displayName": "Nigel Smith",
+    "email": "nigeltx@icloud.com",
+    "passwordHash": "XXXX",
+    "date": 1449027434557,
+    "settings": {
+      "requireWIFI": true,
+      "enableAlerts": false
+    },
+    "SavedStories": [],
+    "filters": [
+      {
+        "name": "Technology Companies",
+        "keyWords": [
+          "Apple",
+          "Microsoft",
+          "IBM",
+          "Amazon",
+          "Google",
+          "Intel"
+        ],
+        "enableAlert": false,
+        "alertFrequency": 0,
+        "enableAutoDelete": false,
+        "deleteTime": 0,
+        "timeOfLastScan": 0,
+        "newStories": []
+      }
+    ]
+  },
+  {
+    "type": "USER_TYPE",
+    "displayName": "Kieu-Oanh Smith",
+    "email": "q1smith@icloud.com",
+    "passwordHash": "XXXX",
+    "date": 1449027434557,
+    "settings": {
+      "requireWIFI": true,
+      "enableAlerts": false
+    },
+    "SavedStories": [],
+    "filters": [
+      {
+        "name": "People",
+        "keywords": [
+          "Trump",
+          "Peterson"
+        ],
+        "enableAlert": false,
+        "alertFrequency": 0,
+        "enableAutoDelete": false,
+        "deleteTime": 0,
+        "timeOfLastScan": 0,
+        "newStories": []
+      }
+    ]
+  }
+]
