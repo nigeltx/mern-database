@@ -25,7 +25,9 @@ let DatabaseServer = require('./classes/DatabaseServer');
 let Helper = require('./classes/Helper');
 
 // Routers
-let apiRoute = require('./routes/api');
+let apiUsers = require('./routes/apiUsers');
+let apiNews = require('./routes/apiNews');
+let apiSharedStories = require('./routes/apiSharedStories');
 
 // Start Express app
 let app = express();
@@ -71,7 +73,9 @@ DatabaseServer.start()
 
     });
 
-app.use('/', apiRoute);
+app.use('/users', apiUsers);
+app.use('/news', apiNews);
+app.use('/sharedstories', apiSharedStories);
 
 //
 // catch 404 and forward to error handler

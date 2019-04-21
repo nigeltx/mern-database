@@ -21,7 +21,9 @@ class DatabaseServer {
                     reject(err);
                 } else {
                     DatabaseServer.database = client;
-                    DatabaseServer.collection = client.db(Environment.databaseName).collection(Environment.databaseCollectionName);
+                    DatabaseServer.news = client.db(Environment.databaseName).collection(Environment.databaseNewsCollectionName);
+                    DatabaseServer.users = client.db(Environment.databaseName).collection(Environment.databaseUsersCollectionName);
+                    DatabaseServer.sharedStories = client.db(Environment.databaseName).collection(Environment.databaseSharedStoriesCollectionName);
                     DatabaseServer.connected = true;
 
                     resolve(client);
@@ -33,6 +35,6 @@ class DatabaseServer {
 
 DatabaseServer.database = {};
 DatabaseServer.objectId = ObjectId;
-DatabaseServer.collection = {};
+DatabaseServer.users = {};
 DatabaseServer.connected = false;
 module.exports = DatabaseServer;

@@ -17,8 +17,12 @@ class Environment {
         Environment.databaseConnectUrl = process.env.DATABASE_CONNECT_URL;
         assert.notStrictEqual(process.env.DATABASE_NAME, undefined, 'DATABASE_NAME environment variable undefined');
         Environment.databaseName = process.env.DATABASE_NAME;
-        assert.notStrictEqual(process.env.DATABASE_COLLECTION_NAME, undefined, 'DATABASE_COLLECTION_NAME environment variable undefined');
-        Environment.databaseCollectionName = process.env.DATABASE_COLLECTION_NAME;
+        assert.notStrictEqual(process.env.DATABASE_NEWS_COLLECTION_NAME, undefined, 'DATABASE_NEWS_COLLECTION_NAME environment variable undefined');
+        Environment.databaseNewsCollectionName = process.env.DATABASE_NEWS_COLLECTION_NAME;
+        assert.notStrictEqual(process.env.DATABASE_USERS_COLLECTION_NAME, undefined, 'DATABASE_USERS_COLLECTION_NAME environment variable undefined');
+        Environment.databaseUsersCollectionName = process.env.DATABASE_USERS_COLLECTION_NAME;
+        assert.notStrictEqual(process.env.DATABASE_SHARED_STORIES_COLLECTION_NAME, undefined, 'DATABASE_SHARED_STORIES_COLLECTION_NAME environment variable undefined');
+        Environment.databaseSharedStoriesCollectionName = process.env.DATABASE_SHARED_STORIES_COLLECTION_NAME;
         assert.notStrictEqual(process.env.JWT_SECRET, undefined, 'JWT_SECRET environment variable undefined');
         Environment.jwtSecret = process.env.JWT_SECRET;
         assert.notStrictEqual(process.env.NEWS_MASTER_DOCUMENT_ID, undefined, 'NEWS_MASTER_DOCUMENT_ID environment variable undefined');

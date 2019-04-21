@@ -1,10 +1,5 @@
 [
   {
-    "_id": "MASTER_STORIES_DO_NOT_DELETE",
-    "newsStories": [],
-    "homeNewsStories": []
-  },
-  {
     "type": "USER_TYPE",
     "displayName": "Nigel Smith",
     "email": "nigeltx@icloud.com",
@@ -14,8 +9,8 @@
       "requireWIFI": true,
       "enableAlerts": false
     },
-    "SavedStories": [],
-    "filters": [
+    "savedStories": [],
+    "newsFilters": [
       {
         "name": "Technology Companies",
         "keyWords": [
@@ -31,7 +26,7 @@
         "enableAutoDelete": false,
         "deleteTime": 0,
         "timeOfLastScan": 0,
-        "newStories": []
+        "newsStories": []
       }
     ]
   },
@@ -45,8 +40,8 @@
       "requireWIFI": true,
       "enableAlerts": false
     },
-    "SavedStories": [],
-    "filters": [
+    "savedStories": [],
+    "newsFilters": [
       {
         "name": "People",
         "keywords": [
@@ -58,7 +53,7 @@
         "enableAutoDelete": false,
         "deleteTime": 0,
         "timeOfLastScan": 0,
-        "newStories": []
+        "newsStories": []
       }
     ]
   }
