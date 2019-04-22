@@ -17,7 +17,7 @@ let userRecordId;
 let newsRecordId;
 
 // // To hit production AWS!
-// var request = require('supertest')('https://worker.augustinetech.com/');
+// var request = require('supertest')('Mern-database-env.gk2u8m3dja.us-east-1.elasticbeanstalk.com');
 
 //// run locally, like in vscode debugger and test against that
 //var request = require('supertest')('http://localhost:3000');
@@ -47,7 +47,7 @@ describe('api testing', function () {
         }
     });
 
-    describe('user api testing', function () {
+    describe('Users api', function () {
 
         it("should insert the record", function (done) {
             var record = {
@@ -191,10 +191,11 @@ describe('api testing', function () {
         });
     });
 
-    describe('news api test', function () {
+    describe('News api', function () {
+
+        const newsRecordId = 'MASTER_STORIES_DO_NOT_DELETE';
 
         it("should insert the record", function (done) {
-            newsRecordId = 'MASTER_STORIES_DO_NOT_DELETE';
             var record = {
                 id: newsRecordId,
                 newsStories: [],
@@ -209,8 +210,8 @@ describe('api testing', function () {
                 });
         });
 
-        it("should read the record with no id", function (done) {
-            request.get('/news').send()
+        it("should read the record", function (done) {
+            request.get('/news?id=' + newsRecordId).send()
                 .end(function (err, res) {
                     assert.strictEqual(res.status, 200);
                     done();

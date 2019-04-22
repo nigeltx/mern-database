@@ -30,6 +30,7 @@ class Environment {
 
         Environment.production = 'production';
         Environment.development = 'development';
+
     }
 }
 

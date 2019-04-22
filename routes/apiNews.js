@@ -51,16 +51,27 @@ router.post('/', function (req, res, next) {
 router.get('/', function (req, res, next) {
 
     // todo add joi validation
-    if (!DatabaseServer.connected) {
+    let id = req.query.id;
+    if (!id) {
+        console.error('Failed to update because no id was provided');
+        res.status(400).json({"Error": "Failed to update because no id was provided"});
+    } else if (!DatabaseServer.connected) {
         console.error('Failed to read because database is not yet started');
         res.status(500).json({"Error": "Failed to read because database is not yet started"});
     } else {
-        DatabaseServer.news.findOne({_id: Environment.newsMasterDocumentId}, function (err, result) {
+        DatabaseServer.news.findOne({_id: id}, function (err, result) {
             if (err) {
                 console.error('Failed to find record');
-                res.status(404).json({"Error": "Record not found"});
+                res.status(500).json({"Error": "Record not found"});
             } else {
-                res.status(200).json(result);
+                if (!result) {
+                    res.status(200).json();
+                } else {
+                    let body = result;
+                    body.id = body._id;
+                    delete body._id;
+                    res.status(200).json(body);
+                }
             }
         })
     }
