@@ -64,6 +64,7 @@ router.get('/', function (req, res, next) {
                 console.error('Failed to find record');
                 res.status(500).json({"Error": "Record not found"});
             } else {
+
                 if (!result) {
                     res.status(200).json();
                 } else {
