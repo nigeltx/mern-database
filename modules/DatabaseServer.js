@@ -4,7 +4,7 @@
 // Includes
 
 // Validate environment before anything
-const Environment = require('../classes/Environment');
+const Environment = require('./Environment');
 
 let databaseClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
@@ -21,9 +21,7 @@ class DatabaseServer {
                     reject(err);
                 } else {
                     DatabaseServer.database = client;
-                    DatabaseServer.news = client.db(Environment.databaseName).collection(Environment.databaseNewsCollectionName);
-                    DatabaseServer.users = client.db(Environment.databaseName).collection(Environment.databaseUsersCollectionName);
-                    DatabaseServer.sharedStories = client.db(Environment.databaseName).collection(Environment.databaseSharedStoriesCollectionName);
+                    DatabaseServer.vehicles = client.db(Environment.databaseName).collection(Environment.databaseVehiclesCollectionName);
                     DatabaseServer.connected = true;
 
                     resolve(client);

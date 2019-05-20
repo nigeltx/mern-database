@@ -1,0 +1,24 @@
+[
+  {
+    "date": 1449027434557,
+    "mileage": 30000,
+    "serviceNames": [
+      "Brake Replacement",
+      "Tire Rotation"
+    ],
+    "locationName": "Fort Bend Toyota",
+    "locationCoordinates": {
+      "latitude": 55.444,
+      "longitude": 32.33
+    },
+    "locationAddress": "3543 SW Freeway, Sugar Land, TX 77479",
+    "locationPhone": "2815448333",
+    "contactName": "Nigel Smith",
+    "contactPhone": "832549864",
+    "insuranceName": "Amica",
+    "insurancePolicy": "549999449",
+    "estimatedCost": 1000,
+    "actualCost": 200,
+    "notes": "Test notes"
+  }
+]

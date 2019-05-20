@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Toyota Scion FR-S",
+    "year": 2013,
+    "make": "Toyota",
+    "model": "Scion FR-S",
+    "licensePlate": "TEX 100",
+    "vin": "A495R9493000F99",
+    "insuranceName": "Amica",
+    "insurancePolicy": "9983333",
+    "mileages": [
+      {
+        "id": 1234,
+        "date": 1449027434557,
+        "mileage": 10000
+      },
+      {
+        "id": 5678,
+        "date": 1449027434557,
+        "mileage": 20000
+      }
+    ],
+    "serviceRecords": [
+      {
+        "id": "884448888844",
+        "date": 1449027434557,
+        "mileage": 15000,
+        "serviceNames": [
+          "Oil Change",
+          "Tire Rotation"
+        ],
+        "locationName": "Fort Bend Toyota",
+        "locationCoordinates": {
+          "latitude": 55.444,
+          "longitude": 32.33
+        },
+        "locationAddress": "3543 SW Freeway, Sugar Land, TX 77479",
+        "locationPhone": "2815448333",
+        "contactName": "Joe Woods",
+        "contactPhone": "832544664",
+        "insuranceName": "Allstate",
+        "insurancePolicy": "549999449",
+        "estimatedCost": 500,
+        "actualCost": 400,
+        "notes": "Some notes"
+      }
+    ],
+    "reminders": [
+      {
+        "id": 4321,
+        "serviceName": "registration",
+        "date": 1449027434557
+      },
+      {
+        "id": 8765,
+        "serviceName": "Oil Change",
+        "mileage": 10000
+      }
+    ],
+    "dateCreated": 1449027434557,
+    "dateModified": 1449027434557
+  }
+]

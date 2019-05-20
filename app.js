@@ -1,8 +1,8 @@
 // app.js
 
 // Validate environment before anything
-const Environment = require('./classes/Environment');
-Environment.get();
+const Environment = require('./modules/Environment');
+Environment.setVariables();
 
 // Import modules
 let express = require('express');
@@ -21,13 +21,11 @@ let createError = require('http-errors');
 let assert = require('assert');
 
 // Import classes
-let DatabaseServer = require('./classes/DatabaseServer');
-let Helper = require('./classes/Helper');
+let DatabaseServer = require('./modules/DatabaseServer');
+let Helper = require('./modules/Helper');
 
 // Routers
-let apiUsers = require('./routes/apiUsers');
-let apiNews = require('./routes/apiNews');
-let apiSharedStories = require('./routes/apiSharedStories');
+let vehicleRoute = require('./routes/vehiclesRoute');
 
 // Start Express app
 let app = express();
@@ -64,18 +62,13 @@ app.use(httpContentFilter({
 // Start the mongo db server
 DatabaseServer.start()
     .then(database => {
-
         console.info("INFO: Successfully connected to database\n");
-
     })
     .catch(error => {
         assert.strictEqual(null, error);
-
     });
 
-app.use('/users', apiUsers);
-app.use('/news', apiNews);
-app.use('/sharedstories', apiSharedStories);
+app.use('/vehicles', vehicleRoute);
 
 //
 // catch 404 and forward to error handler
